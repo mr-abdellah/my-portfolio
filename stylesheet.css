@@ -8,6 +8,16 @@ body {
   height: 100%;
 }
 
+.myHeader {
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 15px;
+}
+
 .firstSection {
   background-image: url(img/Header-llustration-desktop.svg);
   background-repeat: no-repeat;
@@ -16,26 +26,7 @@ body {
   background-size: cover;
 }
 
-.myNavLinks {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.myNavLinks li {
-  list-style: none;
-  margin-top: 25px;
-}
-
-.myNavLinks a {
-  color: #344563;
-  text-decoration: none;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-main {
+.main-content {
   margin: 140px;
   padding: 40px 0;
   margin-top: -50px;
@@ -45,7 +36,7 @@ main {
   justify-content: center;
 }
 
-main #firstPara,
+#firstPara,
 #secondPara,
 #supportingPara {
   font-family: 'Inter', sans-serif;
@@ -53,6 +44,10 @@ main #firstPara,
   font-weight: 800;
   font-size: 32px;
   line-height: 20px;
+}
+
+#firstPara {
+  margin-top: 100px;
 }
 
 #secondPara {
@@ -73,7 +68,19 @@ main #firstPara,
 .social-media-links {
   width: 150px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-media-links ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.social-media-links img {
+  width: 35px;
+  height: 35px;
 }
 
 @media all and (max-width: 600px) {
