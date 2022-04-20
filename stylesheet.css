@@ -45,7 +45,8 @@ main {
 }
   
 main #firstPara,
-#secondPara {
+#secondPara,
+#supportingPara{
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -72,4 +73,23 @@ main #firstPara,
   width: 150px;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media all and (max-width:600px) {
+    #firstPara {
+      margin-top: 100px;
+      margin-bottom: 1px;
+    }
+
+    #supportingPara {
+      width: 200px;
+    }
+
+    #secondPara{
+      width: 380px;
+      line-height: 40px;
+    }
+    #supportingText {
+      width: 300px;
+    }
 }
