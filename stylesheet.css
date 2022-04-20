@@ -76,12 +76,10 @@ body {
   display: flex;
   list-style: none;
   gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-media-links img {
-  width: 35px;
-  height: 35px;
-}
 
 @media all and (max-width: 600px) {
   #firstPara {
@@ -89,6 +87,7 @@ body {
     margin-bottom: 1px;
   }
 
+  #firstPara,
   #supportingPara {
     width: 200px;
   }
