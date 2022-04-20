@@ -33,3 +33,31 @@ body{
     font-weight: 600;
     
 }
+
+main {
+  margin: 140px;
+  padding: 40px 0;
+  margin-top: -50px;
+}
+  
+main #firstPara,
+#secondPara {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 20px;
+}
+
+#secondPara {
+  color: #36b37e;
+}
+
+#supportingText {
+  color: #172b4d;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 24px 0;
+  flex-grow: 0;
+}
