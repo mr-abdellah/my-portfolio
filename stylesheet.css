@@ -80,7 +80,6 @@ body {
   justify-content: center;
 }
 
-
 @media all and (max-width: 600px) {
   #firstPara {
     margin-top: 100px;
