@@ -1,37 +1,38 @@
-*{
-    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* { @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); }
+
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
-body{
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    width: 100%;
-    height: 100%;
+
+.firstSection {
+  background-image: url(img/Header-llustration-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 10px;
+  background-size: cover;
 }
-.firstSection{
-    background-image: url(img/Header-llustration-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding: 10px;
-    background-size: cover;
+
+.myNavLinks {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
-.myNavLinks{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    
+
+.myNavLinks li {
+  list-style: none;
+  margin-top: 25px;
 }
-.myNavLinks li{
-    list-style: none;
-    margin-top: 25px;
-}
-.myNavLinks a{
-    color: #344563;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    
+
+.myNavLinks a {
+  color: #344563;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 main {
@@ -43,10 +44,10 @@ main {
   align-items: center;
   justify-content: center;
 }
-  
+
 main #firstPara,
 #secondPara,
-#supportingPara{
+#supportingPara {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -72,24 +73,25 @@ main #firstPara,
 .social-media-links {
   width: 150px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-@media all and (max-width:600px) {
-    #firstPara {
-      margin-top: 100px;
-      margin-bottom: 1px;
-    }
+@media all and (max-width: 600px) {
+  #firstPara {
+    margin-top: 100px;
+    margin-bottom: 1px;
+  }
 
-    #supportingPara {
-      width: 200px;
-    }
+  #supportingPara {
+    width: 200px;
+  }
 
-    #secondPara{
-      width: 380px;
-      line-height: 40px;
-    }
-    #supportingText {
-      width: 300px;
-    }
+  #secondPara {
+    width: 380px;
+    line-height: 40px;
+  }
+
+  #supportingText {
+    width: 300px;
+  }
 }
