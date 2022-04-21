@@ -6,40 +6,38 @@ body {
   text-align: center;
   width: 100%;
   height: 100%;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid red;
 }
 
 .myHeader {
-  font-family: 'Inter', sans-serif;
   font-size: 25px;
   font-weight: 800;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  margin: 15px;
-}
-
-.firstSection {
-  background-image: url(img/Header-llustration-desktop.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  padding: 10px;
-  background-size: cover;
+  margin-top: 2px;
 }
 
 .main-content {
-  margin: 140px;
+  margin: 140px 0;
   padding: 40px 0;
   margin-top: -50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url(img/Header-llustration-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 42% 50px;
+  padding: 10px;
+  background-size: 100%;
+  background-clip: border-box;
 }
 
 #firstPara,
 #secondPara,
 #supportingPara {
-  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
@@ -56,7 +54,6 @@ body {
 
 #supportingText {
   color: #172b4d;
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 20px;
   margin: 24px 0;
@@ -80,7 +77,32 @@ body {
   justify-content: center;
 }
 
+.secondSection {
+  height: 100%;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.secondSection img {
+  border: none;
+  background-color: #ffffff00;
+}
+
+#scrollDown {
+  background-color: #ffffff00;
+  border: none;
+}
+
+
+
 @media all and (max-width: 600px) {
+  .firstSection {
+    background-position: 42% 70%;
+    padding: 10px;
+    background-size: 185%;
+    background-clip: border-box;
+  }
+
   #firstPara {
     margin-top: 100px;
     margin-bottom: 1px;
@@ -88,11 +110,11 @@ body {
 
   #firstPara,
   #supportingPara {
-    width: 200px;
+    width: 190px;
   }
 
   #secondPara {
-    width: 380px;
+    width: auto;
     line-height: 40px;
   }
 
