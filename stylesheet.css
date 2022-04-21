@@ -1,0 +1,102 @@
+* { @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); }
+
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.myHeader {
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 15px;
+}
+
+.firstSection {
+  background-image: url(img/Header-llustration-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 10px;
+  background-size: cover;
+}
+
+.main-content {
+  margin: 140px;
+  padding: 40px 0;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#firstPara,
+#secondPara,
+#supportingPara {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 20px;
+}
+
+#firstPara {
+  margin-top: 100px;
+}
+
+#secondPara {
+  color: #36b37e;
+}
+
+#supportingText {
+  color: #172b4d;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 24px 0;
+  flex-grow: 0;
+  width: 500px;
+  justify-content: center;
+}
+
+.social-media-links {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-media-links ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media all and (max-width: 600px) {
+  #firstPara {
+    margin-top: 100px;
+    margin-bottom: 1px;
+  }
+
+  #firstPara,
+  #supportingPara {
+    width: 200px;
+  }
+
+  #secondPara {
+    width: 380px;
+    line-height: 40px;
+  }
+
+  #supportingText {
+    width: 300px;
+  }
+}
