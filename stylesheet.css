@@ -47,6 +47,7 @@ body {
 
 #firstPara {
   margin-top: 100px;
+  margin-bottom: -5px;
 }
 
 #secondPara {
@@ -96,7 +97,6 @@ body {
 .my-recent-works {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     "project project project"
     "project project project"
@@ -157,6 +157,10 @@ body {
   color: #fff;
 }
 
+.project button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -188,7 +192,7 @@ body {
   margin-bottom: 24px;
 }
 
-.about-me button {
+#get-my-resume {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 17px;
@@ -198,6 +202,10 @@ body {
   background-color: #36b37e;
   border: none;
   margin-bottom: 52px;
+}
+
+#get-my-resume:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .cards {
@@ -313,7 +321,7 @@ body {
   margin-bottom: 11px;
 }
 
-@media all and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .firstSection {
     background-position: 42% 70%;
     padding: 10px;
@@ -338,5 +346,38 @@ body {
 
   #supportingText {
     width: 300px;
+  }
+
+  .myRWTitle {
+    margin-top: -122px;
+  }
+
+  .my-recent-works {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "project";
+    row-gap: 0;
+  }
+
+  .about-me {
+    background-position: 0% 29%, 185% 0%;
+    margin-top: -90px;
+  }
+
+  .about-me h3 {
+    margin-top: 10px;
+  }
+
+  .about-me h4 {
+    width: 320px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "card";
+    row-gap: 25px;
   }
 }
