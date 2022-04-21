@@ -111,7 +111,7 @@ body {
   justify-self: center;
 }
 
-#work-background {
+.work-background {
   background-color: #ebf0ee;
   height: 252px;
   width: 100%;
@@ -119,7 +119,7 @@ body {
   border-radius: 8px;
 }
 
-.project #work-title {
+.project .work-title {
   font-family: 'Poppins', sans-serif;
   color: #172b4d;
   font-weight: 600;
@@ -225,7 +225,7 @@ body {
   border-radius: 8px;
 }
 
-#card-img {
+.card-img {
   width: 48px;
   height: 48px;
   margin: 56px 160px 5px 161px;
@@ -234,7 +234,7 @@ body {
   box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
 }
 
-#card-paragraph {
+.card-paragraph {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 24px;
