@@ -1,4 +1,4 @@
-* { 
+* {
   @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 }
@@ -23,7 +23,6 @@ body {
 
 .main-content {
   margin: 140px 0;
-  padding: 40px 0;
   margin-top: -50px;
   display: flex;
   flex-direction: column;
@@ -86,11 +85,11 @@ body {
 
 .secondSection img {
   border: none;
-  background-color: #ffffff00;
+  background-color: #fff0;
 }
 
 #scrollDown {
-  background-color: #ffffff00;
+  background-color: #fff0;
   border: none;
 }
 
@@ -98,10 +97,10 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 
-  "project project project"
-  "project project project"
-  "project project project";
+  grid-template-areas:
+    "project project project"
+    "project project project"
+    "project project project";
   grid-gap: 10px;
 }
 
@@ -155,7 +154,7 @@ body {
   border: none;
   border-radius: 4px;
   padding: 12px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .about-me {
@@ -164,10 +163,10 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-image: url(img/about-me-left.png),url(img/about-me-right.png);
+  background-image: url(img/about-me-left.png), url(img/about-me-right.png);
   background-repeat: no-repeat;
-  background-position: 0% 82%, 185% 27%;
-  background-size: 15%,99%;
+  background-position: 0% 29%, 185% -8%;
+  background-size: 15%, 99%;
   background-clip: border-box;
 }
 
@@ -193,7 +192,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 17px;
-  color: #ffffff;
+  color: #fff;
   padding: 12px;
   border-radius: 4px;
   background-color: #36b37e;
@@ -201,12 +200,118 @@ body {
   margin-bottom: 52px;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+}
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 352px;
+  width: 369px;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+}
 
+#card-img {
+  width: 48px;
+  height: 48px;
+  margin: 56px 160px 5px 161px;
+  border: 20px solid white;
+  border-radius: 100px;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+}
 
+#card-paragraph {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #344563;
+}
 
+.card-categories {
+  display: flex;
+  justify-content: center;
+}
 
+#card-list {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  padding: 0;
+}
 
+#card-list li {
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  color: #36b37e;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px;
+  margin-bottom: 84px;
+}
+
+.frameworks-categories {
+  display: flex;
+  justify-content: center;
+}
+
+#frameworks-list {
+  display: flex;
+  list-style: none;
+  column-gap: 25px;
+  row-gap: 2px;
+  padding: 0;
+  width: 315px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#frameworks-list li {
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  color: #36b37e;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px;
+  white-space: nowrap;
+  margin-bottom: 11px;
+}
+
+.skills-categories {
+  display: flex;
+  justify-content: center;
+}
+
+#skills-list {
+  display: flex;
+  list-style: none;
+  column-gap: 25px;
+  row-gap: 2px;
+  padding: 0;
+  width: 315px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills-list li {
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  color: #36b37e;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 12px;
+  white-space: nowrap;
+  margin-bottom: 11px;
+}
 
 @media all and (max-width: 600px) {
   .firstSection {
