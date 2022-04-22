@@ -105,10 +105,12 @@ body {
 }
 
 .project {
-  height: 621px;
-  width: 369px;
-  padding: 10px;
-  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 26px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
 }
 
 .work-background {
@@ -155,6 +157,7 @@ body {
   border-radius: 4px;
   padding: 12px;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .project button:hover {
@@ -182,9 +185,9 @@ body {
   margin-bottom: 24px;
 }
 
-.about-me h4 {
+.about-me p {
   font-family: 'Inter', sans-serif;
-  width: 633px;
+  width: 46%;
   text-align: center;
   font-weight: 400;
   font-size: 20px;
@@ -212,6 +215,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 24px;
+  margin-bottom: 4%;
 }
 
 .card {
@@ -322,8 +326,19 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .main-content {
+    margin-bottom: 0;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .myHeader {
+    padding: 5%;
+    margin-top: 2%;
+  }
+
   .firstSection {
-    background-position: 42% 70%;
     padding: 10px;
     background-size: 185%;
     background-clip: border-box;
@@ -336,41 +351,41 @@ body {
 
   #firstPara,
   #supportingPara {
-    width: 190px;
+    width: 50%;
   }
 
   #secondPara {
-    width: auto;
-    line-height: 40px;
+    width: 40%;
+    line-height: 100%;
   }
 
   #supportingText {
-    width: 300px;
-  }
-
-  .myRWTitle {
-    margin-top: -122px;
+    width: 57%;
   }
 
   .my-recent-works {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
     grid-template-areas: "project";
     row-gap: 0;
   }
 
+  .project {
+    margin: 12% 4% -5% 4%;
+  }
+
   .about-me {
-    background-position: 0% 29%, 185% 0%;
-    margin-top: -90px;
+    background-position: 0% 16%, 185% 0%;
+    margin-top: 15%;
   }
 
   .about-me h3 {
     margin-top: 10px;
   }
 
-  .about-me h4 {
-    width: 320px;
+  .about-me p {
+    width: 43%;
   }
 
   .cards {
@@ -378,6 +393,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "card";
-    row-gap: 25px;
+    row-gap: 3%;
   }
 }
