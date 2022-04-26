@@ -164,9 +164,9 @@
             <h5>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h5>
             <form class="my-form" action="https://formspree.io/f/xdobpeww" method="post">
                 <ul>
-                    <li><input type="text" name="fullname" id="username" placeholder="Full Name"></li>
-                    <li><input type="email" name="email" id="user_email" placeholder="Email Address"></li>
-                    <li><textarea name="message" id="message" cols="30" rows="10">Enter Text here</textarea></li>
+                    <li><input type="text" name="fullname" id="username" maxlength="30" placeholder="Full Name" required></li>
+                    <li><input type="email" name="email" id="user_email" placeholder="Email Address" required></li>
+                    <li><textarea name="message" id="message" maxlength="500" cols="30" rows="10" required>Enter Text here</textarea></li>
                 </ul>
                 <button type="submit">Get in touch</button>
             </form>
