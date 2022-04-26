@@ -65,7 +65,7 @@ body {
 }
 
 .social-media-links {
-  width: 150px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -150,7 +150,7 @@ body {
   font-size: 15px;
 }
 
-.project button {
+button {
   width: 98px;
   background-color: #36b37e;
   border: none;
@@ -160,7 +160,7 @@ body {
   margin-bottom: 10px;
 }
 
-.project button:hover {
+button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
@@ -325,10 +325,109 @@ body {
   margin-bottom: 11px;
 }
 
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 890px;
+  margin-top: -10%;
+  background: url(img/contact/frame1.png), url(img/contact/frame2.png), url(img/contact/frame3.png);
+  background-repeat: no-repeat;
+  background-size: 17%, 12%, 17%;
+  background-position: -2% 110%, 34% 93%, 100% 100%;
+}
+
+h5 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  max-width: 46%;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.my-form ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-form input {
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 48px;
+  width: 684px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 24px;
+}
+
+.my-form input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+.my-form textarea {
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 684px;
+}
+
+.my-form textarea::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #dfe1e6;
+}
+
+.social-media-links-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+}
+
+h6 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 330px;
+  color: #42526e;
+}
+
 @media only screen and (max-width: 600px) {
   .main-content {
     margin-bottom: 0;
     height: 100%;
+    width: 100%;
     background-position: center;
     background-size: cover;
   }
@@ -385,7 +484,7 @@ body {
   }
 
   .about-me p {
-    width: 43%;
+    width: 88%;
   }
 
   .cards {
@@ -394,5 +493,35 @@ body {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "card";
     row-gap: 3%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-position: -20% 110%, -20% 93%, 103% 100%;
+  }
+
+  .contact h5 {
+    max-width: 86%;
+  }
+
+  form input {
+    max-width: 50%;
+  }
+
+  form textarea {
+    max-width: 50%;
+    height: 114px;
+  }
+
+  form button {
+    margin: 20px auto;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
   }
 }
