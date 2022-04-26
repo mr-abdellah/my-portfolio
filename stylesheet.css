@@ -427,6 +427,7 @@ h6 {
   .main-content {
     margin-bottom: 0;
     height: 100%;
+    width: 100%;
     background-position: center;
     background-size: cover;
   }
@@ -483,7 +484,7 @@ h6 {
   }
 
   .about-me p {
-    width: 43%;
+    width: 88%;
   }
 
   .cards {
@@ -503,17 +504,16 @@ h6 {
   }
 
   .contact h5 {
-    max-width: 49%;
+    max-width: 86%;
   }
 
   form input {
-    width: 327px;
-    height: 48px;
+    max-width: 50%;
   }
 
   form textarea {
-    width: 327px;
-    height: 114px;
+    max-width: 50%;
+    height: 114px
   }
 
   form button {
