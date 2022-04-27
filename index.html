@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="firstSection">
+    <div class="desktop-Section">
         <header class="myHeader">
-            <div id="my-logo">Welcome</div>
-            <div id="menu"><img src="img/menu.png" alt="menu icon" ></div>
+            <div class="desktop-navbar">
+                <nav class="navbar">
+                    <ul class="navbar-links">
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <section class="main-content">
+        <section class="desktop-main-content">
             <h1 id="firstPara">Hey there.</h1><p id="supportingPara">I'm Abdou.</p>
             <p id="secondPara">I'm a software developer</p>
             <p id="supportingText"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
@@ -28,11 +35,32 @@
             </div>
         </section>
     </div>
+    <div class="mobile-section">
+        <div class="mobile-navbar">
+            <div id="my-logo">Welcome</div>
+            <div id="menu"><img src="img/menu.png" alt="menu icon" ></div>
+        </div>
+        <section class="mobile-main-content">
+            <h1 id="first-mobile-Para">Hey there.I'm<br>Abdou.</h1>
+            <p id="second-mobile-Para">I'm a software developer</p>
+            <p id="supporting-mobile-Text"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                don't hestiate to contact me.</p>
+            <div class="mobile-social-media-links">
+                <ul>
+                    <li><a href="https://twitter.com/belkaiduus" target="_blank" rel="noopener"><img rel="noreferrer" src="img/social/Twitter.png" alt="Twitter Logo" ></a></li>
+                    <li><a href="https://linkedin.com/in/belkaidus" target="_blank" rel="noopener"><img rel="noreferrer" src="img/social/Linkedin.png" alt="Linkedin Logo" ></a></li>
+                    <li><a href="https://medium.com/" target="_blank" rel="noopener"><img rel="noreferrer" src="img/social/medium.png" alt="Medium Logo" ></a></li>
+                    <li><a href="https://github.com/mr-abdellah" target="_blank" rel="noopener"><img rel="noreferrer" src="img/social/GitHub.png" alt="GitHub Logo"></a></li>
+                    <li><a href="https://angel.co/" target="_blank" rel="noopener"><img rel="noreferrer" src="img/social/angellist.png" alt="Angellist Logo"></a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
     <section class="secondSection">
         <div class="myRWTitle">
             <button id="scrollDown" type="submit"><img src="img/scrollDown.png" alt="scrollDown button"></button>
             <h2>My Recent Works</h2>
-            <img src="img/Indicator.png" alt="Indicator icon">
+            <img id="indicator" src="img/Indicator.png" alt="Indicator icon">
         </div>
         <div class="my-recent-works">
             <div class="project">
@@ -114,7 +142,7 @@
                 <button type="submit">See Project</button>
             </div>
         </div> 
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <h3>About me</h3>
             <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don't hestiate to contact me.</p>
@@ -160,7 +188,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h5>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h5>
             <form class="my-form" action="https://formspree.io/f/xdobpeww" method="post">
                 <ul>
