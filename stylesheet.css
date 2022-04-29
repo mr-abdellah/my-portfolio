@@ -233,7 +233,8 @@ button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: url(img/about-me-left.png) no-repeat,
+  background:
+    url(img/about-me-left.png) no-repeat,
     url(img/about-me-right.png) no-repeat;
   background-position: -21% 20%, 84% 1%;
   background-size: 30%, 150%;
@@ -430,20 +431,6 @@ footer h6 {
     font-family: "Inter", sans-serif;
   }
 
-  #firstPara {
-    @keyframes writing {
-      0% {
-        margin-left: 0;
-      }
-      50% {
-        margin-left: 20%;
-      }
-      100% {
-        margin-left: 0%;
-      }
-    }
-  }
-
   .mobile-section {
     display: none;
   }
@@ -499,6 +486,21 @@ footer h6 {
     margin-top: 100px;
     margin-bottom: -5px;
     color: #172b4d;
+    animation: writing 4s;
+  }
+
+  @keyframes writing {
+    0% {
+      margin-left: 0;
+    }
+
+    50% {
+      margin-left: 20%;
+    }
+
+    100% {
+      margin-left: 0%;
+    }
   }
 
   #secondPara {
@@ -806,7 +808,8 @@ footer h6 {
     align-items: flex-start;
     height: 100%;
     width: 100%;
-    background: url(img/contact/frame1.png) no-repeat,
+    background:
+      url(img/contact/frame1.png) no-repeat,
       url(img/contact/frame2.png) no-repeat,
       url(img/contact/frame3.png) no-repeat;
     background-position: 0% 110%, 33% 90%, 100% 101%;
