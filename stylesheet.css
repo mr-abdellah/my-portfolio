@@ -1,6 +1,6 @@
 * {
-  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 }
 
 html,
@@ -25,7 +25,7 @@ body {
 
 #my-logo {
   margin-left: 5%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -47,7 +47,7 @@ body {
 
 #first-mobile-Para,
 #second-mobile-Para {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -64,7 +64,7 @@ body {
 }
 
 #supporting-mobile-Text {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
   width: 85%;
@@ -106,7 +106,7 @@ form ul {
 }
 
 h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 40px;
   width: 65%;
@@ -139,7 +139,7 @@ h2 {
 }
 
 .project h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #3a4a42;
@@ -166,7 +166,7 @@ h2 {
   padding: 10px;
   white-space: nowrap;
   margin-bottom: 11px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .frameworks-list li {
@@ -180,7 +180,7 @@ h2 {
   padding: 12px;
   white-space: nowrap;
   margin-bottom: 11px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .language-list li {
@@ -194,12 +194,12 @@ h2 {
   padding: 12px;
   white-space: nowrap;
   margin-bottom: 11px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .project ul li {
   color: #3a4a42;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 600;
   background-color: #e8f0ee;
@@ -233,20 +233,21 @@ button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: url(img/about-me-left.png) no-repeat, url(img/about-me-right.png) no-repeat;
+  background: url(img/about-me-left.png) no-repeat,
+    url(img/about-me-right.png) no-repeat;
   background-position: -21% 20%, 84% 1%;
   background-size: 30%, 150%;
 }
 
 .about-me h3 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
 }
 
 .about-me p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #42526e;
   font-weight: 400;
   font-size: 20px;
@@ -286,7 +287,7 @@ button:hover {
 }
 
 .card-paragraph {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #344563;
   font-weight: 600;
   font-size: 24px;
@@ -343,7 +344,7 @@ button:hover {
 }
 
 .contact h5 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 40px;
   width: 87%;
@@ -361,12 +362,12 @@ form input {
   border-radius: 4px;
   height: 48px;
   width: 360px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-bottom: 24px;
 }
 
 form input::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -383,7 +384,7 @@ form textarea {
 }
 
 form textarea::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -410,7 +411,7 @@ footer .footer-links {
 
 footer h6 {
   color: #42526e;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
   margin-top: 1.5%;
@@ -426,7 +427,21 @@ footer h6 {
     height: 100%;
     overflow-x: hidden;
     text-align: center;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
+  }
+
+  #firstPara {
+    @keyframes writing {
+      0% {
+        margin-left: 0;
+      }
+      50% {
+        margin-left: 20%;
+      }
+      100% {
+        margin-left: 0%;
+      }
+    }
   }
 
   .mobile-section {
@@ -462,7 +477,7 @@ footer h6 {
 
   .navbar-links a {
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     color: #344563;
     font-style: normal;
     font-weight: 600;
@@ -492,7 +507,7 @@ footer h6 {
 
   #supportingText {
     color: #172b4d;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -568,7 +583,7 @@ footer h6 {
   }
 
   .project .work-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #172b4d;
     font-weight: 600;
     font-size: 24px;
@@ -592,7 +607,7 @@ footer h6 {
     background-color: #ebf0ee;
     border-radius: 4px;
     padding: 3%;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 15px;
   }
@@ -625,7 +640,7 @@ footer h6 {
   }
 
   .about-me h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: #172b4d;
@@ -633,7 +648,7 @@ footer h6 {
   }
 
   .about-me p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     width: 46%;
     text-align: center;
     font-weight: 400;
@@ -643,7 +658,7 @@ footer h6 {
   }
 
   #get-my-resume {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 17px;
     color: #fff;
@@ -698,7 +713,7 @@ footer h6 {
   }
 
   .card-paragraph {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 24px;
     text-align: center;
@@ -791,7 +806,9 @@ footer h6 {
     align-items: flex-start;
     height: 100%;
     width: 100%;
-    background: url(img/contact/frame1.png) no-repeat, url(img/contact/frame2.png) no-repeat, url(img/contact/frame3.png) no-repeat;
+    background: url(img/contact/frame1.png) no-repeat,
+      url(img/contact/frame2.png) no-repeat,
+      url(img/contact/frame3.png) no-repeat;
     background-position: 0% 110%, 33% 90%, 100% 101%;
     background-size: 15%, 10%, 15%;
     box-sizing: border-box;
