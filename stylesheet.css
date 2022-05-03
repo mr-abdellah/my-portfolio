@@ -91,13 +91,13 @@ form ul {
   gap: 10%;
   margin-top: 15%;
 }
-
+/*scrollDown should be in lower case*/
 .scrollDown {
   margin-top: 15%;
   background-color: transparent;
   border: none;
 }
-
+/*Lower case*/
 .myRWTitle {
   display: flex;
   flex-direction: column;
