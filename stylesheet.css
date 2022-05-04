@@ -216,7 +216,7 @@ button {
   border: none;
   padding: 2.5% 4%;
   border-radius: 4px;
-  background-color: #36b37f;
+  background-color: #246a4c;
   margin-bottom: 15%;
 }
 
@@ -615,7 +615,7 @@ footer h6 {
 
   .project button {
     width: 32%;
-    background-color: #36b37e;
+    background-color: #246a4c;
     border: none;
     border-radius: 4px;
     padding: 2%;
@@ -664,7 +664,7 @@ footer h6 {
     color: #fff;
     padding: 12px;
     border-radius: 4px;
-    background-color: #36b37e;
+    background-color: #246a4c;
     border: none;
     margin-bottom: 52px;
     transition: ease 1s;
@@ -673,8 +673,8 @@ footer h6 {
 
   #get-my-resume:hover {
     box-shadow: inset 200px 0 0 0 #fff;
-    color: #36b37e;
-    border: 1px solid #36b37e;
+    color: #246a4c;
+    border: 1px solid #246a4c;
   }
 
   .my-cards {
