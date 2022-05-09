@@ -50,6 +50,17 @@ body {
   display: none;
 }
 
+#close {
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.m-navbar-links {
+  padding: 10%;
+  margin: 0;
+  list-style: none;
+}
+
 .mobile-main-content {
   display: flex;
   flex-direction: column;
