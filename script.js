@@ -14,7 +14,7 @@ hamburgerCloseBtn.addEventListener('click', () => {
 });
 
 mobileLink.forEach(link => {
-  link.addEventListener('click', (param) => {
+  link.addEventListener('click', () => {
     mobileNav.style.display = 'none';
     mobileNav.style.top = '-100%';
   });
