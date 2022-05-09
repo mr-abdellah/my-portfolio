@@ -17,5 +17,4 @@ function closeContent () {
   mobileNav.style.top = '-100%';
 }
 
-mobileLink.forEach(link => {
-  link.addEventListener('click', closeContent) });
+mobileLink.forEach((link) => { link.addEventListener('click', closeContent) });
