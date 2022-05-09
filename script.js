@@ -12,10 +12,10 @@ hamburgerCloseBtn.addEventListener('click', () => {
   mobileNav.style.display = 'none';
   mobileNav.style.top = '-100%';
 });
+function closeContent  () {
+    mobileNav.style.display = 'none';
+    mobileNav.style.top = '-100%';
+}
 
-mobileLink.forEach((link) => {
-  link.addEventListener('click', () {
-        mobileNav.style.display = 'none';
-        mobileNav.style.top = '-100%';
-    });
-});
+mobileLink.forEach(link => {
+  link.addEventListener('click', closeContent)});
