@@ -61,6 +61,16 @@ body {
   list-style: none;
 }
 
+.m-navbar-links a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+}
+
 .mobile-main-content {
   display: flex;
   flex-direction: column;
