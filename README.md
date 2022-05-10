@@ -10,7 +10,8 @@
 - Twitter: [@belkaiduus](https://twitter.com/belkaiduus)
 - LinkedIn: [belkaidus](https://linkedin.com/in/belkaidus)
 ## You can try the onlin version here : (https://mr-abdellah.github.io/my-portfolio/)
-##**Getting Started**
+##Getting Started
+
 **To get a local copy of the project there are two ways:**
 - Download the Zip Folder.
 - Clone this repository.
