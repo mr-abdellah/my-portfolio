@@ -17,6 +17,11 @@
 - Download the Zip Folder.
 - Clone this repository.
 
+# Collaborators in this project
+- **Hakim BAHEDDI**
+- GitHub: [@teckim](https://github.com/teckim)
 
+-**Waleed Amjad**
+- GitHub: [@caasperr](https://github.com/caasperr)
 ## Show your support
 Give a ⭐️ if you like this project
