@@ -21,7 +21,7 @@ mobileLink.forEach((link) => { link.addEventListener('click', closeContent); });
 
 let projectsContainer = document.querySelector('.my-recent-works');
 
-function generatProject (name,description, image, technologies,liveVersion,source) {
+function generatProject ({ name, image, technologies }) {
   return `
   <div class="project">
   <div class="work-background" style="background : url(${image})"></div>
@@ -31,7 +31,7 @@ function generatProject (name,description, image, technologies,liveVersion,sourc
           ${
             technologies.map(technology =>{
               return `<li>${technology}</li>`
-            })
+            }).join('')
           }
         </ul>
       </div>
@@ -40,5 +40,58 @@ function generatProject (name,description, image, technologies,liveVersion,sourc
 </div>
   `
 }
-let myProject = generatProject("project 1", null , null, ["Ruby on rails", "css", "JavaScript"]);
-projectsContainer.innerHTML = myProject;
+
+const projects = [
+    {
+        name: 'Project One',
+        description: 'Test',
+        image: './images/bg.jpg',
+        technologies: ["Ruby on rails", "css", "JavaScript"],
+        liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
+        source: 'https://google.com',
+    },
+    {
+        name: 'Project Two',
+        description: 'Test',
+        image: './images/bg.jpg',
+        technologies: ["Ruby on rails", "css", "JavaScript"],
+        liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
+        source: 'https://google.com',
+    },
+    {
+        name: 'Project Three',
+        description: 'Test',
+        image: './images/bg.jpg',
+        technologies: ["Ruby on rails", "css", "JavaScript"],
+        liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
+        source: 'https://google.com',
+    },
+    {
+        name: 'Project four',
+        description: 'Test',
+        image: './images/bg.jpg',
+        technologies: ["Ruby on rails", "css", "JavaScript"],
+        liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
+        source: 'https://google.com',
+    },
+    {
+        name: 'Project Five',
+        description: 'Test',
+        image: './images/bg.jpg',
+        technologies: ["Ruby on rails", "css", "JavaScript"],
+        liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
+        source: 'https://google.com',
+    },
+    {
+        name: 'Project Six',
+        description: 'Test',
+        image: './images/bg.jpg',
+        technologies: ["Ruby on rails", "css", "JavaScript"],
+        liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
+        source: 'https://google.com',
+    }
+]
+
+let htmlProjects = projects.map(project => generatProject(project)).join('');
+
+projectsContainer.innerHTML = htmlProjects;
