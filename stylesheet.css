@@ -39,7 +39,7 @@ body {
   justify-content: space-between;
   top: 0;
   position: fixed;
-  height: 430px;
+  height: 95%;
   border-radius: 2px;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
@@ -55,9 +55,13 @@ body {
 }
 
 .m-navbar-links {
-  padding: 10%;
+  padding: 20% 0 0 10%;
   margin: 0;
   list-style: none;
+}
+
+.link {
+  margin-bottom: 8%;
 }
 
 .m-navbar-links a {
