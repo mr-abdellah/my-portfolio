@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdellah Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
+    
 </head>
 <body>
     <div class="mobile-section">
         <div class="mobile-navbar">
             <div id="my-logo">Welcome</div>
-            <div id="menu"><img src="img/menu.png" alt="menu icon" ></div>
+            <div id="menu"><img src="img/menu.png" alt="menu icon" id="open" ></div>
         </div>
+        <nav class="m-navbar">
+            <ul class="m-navbar-links">
+                <li class="link"><a href="#" class="m-navbar-link">Portfolio</a></li>
+                <li class="link"><a href="#about-me" class="m-navbar-link">About</a></li>
+                <li class="link"><a href="#contact" class="m-navbar-link">Contact</a></li>
+            </ul>
+            <div id="close"><img src="img/close.png" alt="closing icon"></div>
+        </nav>
         <section class="mobile-main-content">
             <h1 id="first-mobile-Para">Hey there.I'm Abdou.</h1>
             <p id="second-mobile-Para">I'm a software developer</p>
@@ -227,5 +236,6 @@
             <h6>belkaid.abdulah@gmail.com</h6>
         </footer>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

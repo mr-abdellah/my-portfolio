@@ -35,6 +35,45 @@ body {
   margin-right: 5%;
 }
 
+.m-navbar {
+  justify-content: space-between;
+  top: 0;
+  position: fixed;
+  height: 95%;
+  border-radius: 2px;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  width: 100%;
+  background-color: #fff;
+  transition: top 1s ease;
+  display: none;
+}
+
+#close {
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.m-navbar-links {
+  padding: 20% 0 0 10%;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  margin-bottom: 8%;
+}
+
+.m-navbar-links a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+}
+
 .mobile-main-content {
   display: flex;
   flex-direction: column;
@@ -850,7 +889,7 @@ footer h6 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 3;
+    gap: 3%;
     height: 100%;
     width: 100%;
   }
