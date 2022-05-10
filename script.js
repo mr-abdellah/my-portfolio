@@ -2,6 +2,7 @@ const hamburgerOpenBtn = document.getElementById('open');
 const mobileNav = document.querySelector('.m-navbar');
 const hamburgerCloseBtn = document.getElementById('close');
 const mobileLink = document.querySelectorAll('.m-navbar-link');
+const appearModel = document.getElementById('modal');
 
 hamburgerOpenBtn.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -21,7 +22,7 @@ mobileLink.forEach((link) => { link.addEventListener('click', closeContent); });
 
 let projectsContainer = document.querySelector('.my-recent-works');
 
-function generatProject ({ name, image, technologies }) {
+function generatProject ({ name, image, technologies },index) {
   return `
   <div class="project">
   <div class="work-background" style="background : url(${image})"></div>
@@ -35,7 +36,7 @@ function generatProject ({ name, image, technologies }) {
           }
         </ul>
       </div>
-      <button type="submit">See Project</button>
+      <button data-target-model= "modal" id="modal-btn-${index}" type="submit">See Project</button>
   </div>
 </div>
   `
@@ -50,15 +51,14 @@ const projects = [
         liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
         source: 'https://google.com',
     },
-    {
-        name: 'Project Two',
+    {   name: 'Project Two',
         description: 'Test',
         image: './images/bg.jpg',
         technologies: ["Ruby on rails", "css", "JavaScript"],
         liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
         source: 'https://google.com',
     },
-    {
+    {   
         name: 'Project Three',
         description: 'Test',
         image: './images/bg.jpg',
@@ -92,6 +92,12 @@ const projects = [
     }
 ]
 
-let htmlProjects = projects.map(project => generatProject(project)).join('');
+let htmlProjects = projects.map((project,index) => generatProject(project,index)).join('');
 
 projectsContainer.innerHTML = htmlProjects;
+projects.forEach((project,index) => {
+    document.getElementById(`modal-btn-${index}`).addEventListener('click', () => 
+    {
+        appearModel.style.display = "flex";
+    })    
+});

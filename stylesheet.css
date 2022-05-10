@@ -777,11 +777,10 @@ footer h6 {
 
   .desktop-pop-up-container {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: none;
   }
 
   .desktop-pop-up {
