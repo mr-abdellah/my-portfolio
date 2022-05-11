@@ -478,7 +478,7 @@ footer h6 {
 }
 
 .pop-container {
-  display: flex;
+  display: none;
   justify-content: center;
   position: absolute;
   left: 0;
