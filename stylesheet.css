@@ -196,6 +196,18 @@ h2 {
   white-space: nowrap;
 }
 
+.mpu-lists li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #ebf0ee;
+}
+
 .skills-list li {
   width: 15%;
   text-align: center;
@@ -535,18 +547,6 @@ footer h6 {
   color: #344563;
   width: 92%;
   padding-left: 5%;
-}
-
-.mpu-lists li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  padding: 8px 12px;
-  border-radius: 4px;
-  background: #ebf0ee;
 }
 
 .mpu-buttons {
@@ -1113,5 +1113,4 @@ footer h6 {
   footer h6 {
     display: none;
   }
-
 }

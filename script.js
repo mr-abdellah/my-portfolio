@@ -112,6 +112,5 @@ projects.forEach((project,index) => {
     {
         appearModel.style.display = 'flex';
         bodyColor.style.backgroundColor = '#c1c7d0';
-        console.log('button clicked');
     })    
 });
