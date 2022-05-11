@@ -7,6 +7,12 @@ const bodyColor = document.body;
 const closePopUp = document.querySelector('.pop-up-close');
 const form = document.getElementById('form');
 const email = document.getElementById('email');
+ //Form Validation
+
+ const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('errors');
+
 
 closePopUp.addEventListener('click', () => {
   appearModel.style.display = 'none';
