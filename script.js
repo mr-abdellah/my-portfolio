@@ -110,7 +110,6 @@ projects.forEach((project, index) => {
     appearModel.style.display = 'flex';
     bodyColor.style.backgroundColor = '#c1c7d0';
   });
-
 });
 
 form.addEventListener('submit', (event) => {
