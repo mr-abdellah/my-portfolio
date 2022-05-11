@@ -5,15 +5,13 @@ const mobileLink = document.querySelectorAll('.m-navbar-link');
 const appearModel = document.getElementById('modal');
 const bodyColor = document.body;
 const closePopUp = document.querySelector('.pop-up-close');
-
-
+const form = document.getElementById('form');
+const email = document.getElementById('email');
 
 closePopUp.addEventListener('click', () => {
   appearModel.style.display = 'none';
   bodyColor.style.backgroundColor = 'transparent';
 })
-
-
 
 hamburgerOpenBtn.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -112,6 +110,5 @@ projects.forEach((project,index) => {
     {
         appearModel.style.display = 'flex';
         bodyColor.style.backgroundColor = '#c1c7d0';
-        console.log('button clicked');
     })    
 });

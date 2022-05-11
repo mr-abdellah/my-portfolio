@@ -130,10 +130,13 @@
 
         <section class="contact" id="contact">
             <h5>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h5>
-            <form class="my-form" action="https://formspree.io/f/xdobpeww" method="post">
+            <form id="form" class="my-form" action="https://formspree.io/f/xdobpeww" method="post">
                 <ul>
                     <li><input type="text" name="fullname" id="username" maxlength="30" placeholder="Full Name" required></li>
-                    <li><input type="email" name="email" id="user_email" placeholder="Email Address" required></li>
+                    <li>
+                        <input type="email" name="email" id="email" placeholder="Email Address" required>
+                        <small id="erros"></small>
+                    </li>
                     <li><textarea name="message" id="message" maxlength="500" cols="30" rows="10" required placeholder="Enter Text here"></textarea></li>
                 </ul>
                 <button class="get-in-touch" type="submit">Get in touch</button>
@@ -157,8 +160,8 @@
             <div class="dpu-heading">
                 <h1>Keeping track of hundreds of components</h1>
                 <div class="dpu-buttons">
-                    <button class="dpu-button" type="submit"><a href="">See live</a><img src="img/see-proj.svg" alt="see project icon" class="dpu-icon"></button>
-                    <button class="dpu-button" type="submit"><a href="">See Source</a><img src="img/see-source.png" alt="see Source icon" class="dpu-icon"></button>
+                    <button class="dpu-button" type="submit">See live<img src="img/see-proj.svg" alt="see project icon" class="dpu-icon"></button>
+                    <button class="dpu-button" type="submit">See Source<img src="img/see-source.png" alt="see Source icon" class="dpu-icon"></button>
                 </div>
             </div>
             <ul class="dpu-lists">
@@ -178,8 +181,8 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
             </div>
             <div class="mpu-buttons">
-                <button class="mpu-button" type="submit"><a href="">See live</a><img src="img/see-proj.svg" alt="see project icon" class="dpu-icon"></button>
-                <button class="mpu-button" type="submit"><a href="">See Source</a><img src="img/see-source.png" alt="see Source icon" class="dpu-icon"></button>
+                <button class="mpu-button" type="submit">See live<img src="img/see-proj.svg" alt="see project icon" class="dpu-icon"></button>
+                <button class="mpu-button" type="submit">See Source<img src="img/see-source.png" alt="see Source icon" class="dpu-icon"></button>
             </div>
         </div>
     </div>
