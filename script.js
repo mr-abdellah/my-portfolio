@@ -33,7 +33,7 @@ function generatProject({ name, image, technologies }, index) {
   return `
   <div class="project">
   <div class="work-background" style="background : url(${image})"></div>
-      <h3 class="work-title">${name}</h3>
+    <h3 class="work-title">${name}</h3>
       <div class="categories">
         <ul>
           ${
@@ -107,6 +107,7 @@ projects.forEach((project, index) => {
     appearModel.style.display = 'flex';
     bodyColor.style.backgroundColor = '#c1c7d0';
   });
+
 });
 
 form.addEventListener('submit', (event) => {

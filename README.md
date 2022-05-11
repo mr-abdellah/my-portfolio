@@ -11,6 +11,17 @@
 - LinkedIn: [belkaidus](https://linkedin.com/in/belkaidus)
 ## You can try the onlin version here : (https://mr-abdellah.github.io/my-portfolio/)
 
-## Show your support
+# Getting started :
 
+**To get a local copy of the project there are two ways:**
+- Download the Zip Folder.
+- Clone this repository.
+
+# Collaborators in this project
+- **Hakim BAHEDDI**
+- GitHub: [@teckim](https://github.com/teckim)
+
+- **Waleed Amjad**
+- GitHub: [@caasperr](https://github.com/caasperr)
+## Show your support
 Give a ⭐️ if you like this project
