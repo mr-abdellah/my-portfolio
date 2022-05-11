@@ -3,6 +3,17 @@ const mobileNav = document.querySelector('.m-navbar');
 const hamburgerCloseBtn = document.getElementById('close');
 const mobileLink = document.querySelectorAll('.m-navbar-link');
 const appearModel = document.getElementById('modal');
+const bodyColor = document.body;
+const closePopUp = document.querySelector('.pop-up-close');
+
+
+
+closePopUp.addEventListener('click', () => {
+  appearModel.style.display = 'none';
+  bodyColor.style.backgroundColor = 'transparent';
+})
+
+
 
 hamburgerOpenBtn.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -95,9 +106,12 @@ const projects = [
 let htmlProjects = projects.map((project,index) => generatProject(project,index)).join('');
 
 projectsContainer.innerHTML = htmlProjects;
+
 projects.forEach((project,index) => {
     document.getElementById(`modal-btn-${index}`).addEventListener('click', () => 
     {
-        appearModel.style.display = "flex";
+        appearModel.style.display = 'flex';
+        bodyColor.style.backgroundColor = '#c1c7d0';
+        console.log('button clicked');
     })    
 });
