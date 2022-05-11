@@ -27,13 +27,13 @@ function closeContent() {
 
 mobileLink.forEach((link) => { link.addEventListener('click', closeContent); });
 
-let projectsContainer = document.querySelector('.my-recent-works');
+const projectsContainer = document.querySelector('.my-recent-works');
 
-function generatProject ({ name, image, technologies },index) {
+function generatProject({ name, image, technologies },index) {
   return `
   <div class="project">
   <div class="work-background" style="background : url(${image})"></div>
-      <h3 class="work-title">${name}</h3>
+    <h3 class="work-title">${name}</h3>
       <div class="categories">
         <ul>
           ${
