@@ -6,11 +6,6 @@ const appearModel = document.getElementById('modal');
 const bodyColor = document.body;
 const closePopUp = document.querySelector('.pop-up-close');
 
-//Form Validation
-const form = document.getElementById('form');
-const email = document.getElementById('email');
-const error = document.getElementById('errors');
-
 
 closePopUp.addEventListener('click', () => {
   appearModel.style.display = 'none';
@@ -117,15 +112,18 @@ projects.forEach((project,index) => {
     })    
 });
 
+//Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('errors');
+
 form.addEventListener('submit', (event) => {
   let a = false;
-  event.preventDefault();
-
   if(email.value === email.value.toLowerCase()) {
-     a = true;
+    a = true;
   }
-  if(a===false)
-  {
-  error.innerText = 'Please Your Email Must be in Lower Case';
+  if(a ===false) {
+    event.preventDefault();
+    error.innerText = 'Please Your Email Must be in Lower Case';
   }
 } );

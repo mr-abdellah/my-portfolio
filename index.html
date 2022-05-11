@@ -133,13 +133,11 @@
             <form id="form" class="my-form" action="https://formspree.io/f/xdobpeww" method="post">
                 <ul>
                     <li><input type="text" name="fullname" id="username" maxlength="30" placeholder="Full Name" required></li>
-                    <li>
-                        <input type="email" name="email" id="email" placeholder="Email Address" required>
-                        <small id="erros"></small>
-                    </li>
+                    <li><input type="email" name="email" id="email" placeholder="Email Address" required></li>
                     <li><textarea name="message" id="message" maxlength="500" cols="30" rows="10" required placeholder="Enter Text here"></textarea></li>
                 </ul>
-                <button class="get-in-touch" type="submit">Get in touch</button>
+                <button class="get-in-touch" type="submit" id="submit">Get in touch</button>
+                <small id="errors"></small>
             </form>
         </section>
         <footer>
