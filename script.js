@@ -5,11 +5,9 @@ const mobileLink = document.querySelectorAll('.m-navbar-link');
 const appearModel = document.getElementById('modal');
 const bodyColor = document.body;
 const closePopUp = document.querySelector('.pop-up-close');
-const form = document.getElementById('form');
-const email = document.getElementById('email');
- //Form Validation
 
- const form = document.getElementById('form');
+//Form Validation
+const form = document.getElementById('form');
 const email = document.getElementById('email');
 const error = document.getElementById('errors');
 
@@ -118,3 +116,16 @@ projects.forEach((project,index) => {
         bodyColor.style.backgroundColor = '#c1c7d0';
     })    
 });
+
+form.addEventListener('submit', (event) => {
+  let a = false;
+  event.preventDefault();
+
+  if(email.value === email.value.toLowerCase()) {
+     a = true;
+  }
+  if(a===false)
+  {
+  error.innerText = 'Please Your Email Must be in Lower Case';
+  }
+} );
