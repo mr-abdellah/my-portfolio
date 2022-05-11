@@ -6,14 +6,10 @@ const appearModel = document.getElementById('modal');
 const bodyColor = document.body;
 const closePopUp = document.querySelector('.pop-up-close');
 
-
-
 closePopUp.addEventListener('click', () => {
   appearModel.style.display = 'none';
   bodyColor.style.backgroundColor = 'transparent';
-})
-
-
+});
 
 hamburgerOpenBtn.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
