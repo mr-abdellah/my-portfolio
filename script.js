@@ -6,6 +6,11 @@ const appearModel = document.getElementById('modal');
 const bodyColor = document.body;
 const closePopUp = document.querySelector('.pop-up-close');
 
+// Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('errors');
+
 closePopUp.addEventListener('click', () => {
   appearModel.style.display = 'none';
   bodyColor.style.backgroundColor = 'transparent';
@@ -108,11 +113,6 @@ projects.forEach((project, index) => {
     bodyColor.style.backgroundColor = '#c1c7d0';
   });
 });
-
-// Form Validation
-const form = document.getElementById('form');
-const email = document.getElementById('email');
-const error = document.getElementById('errors');
 
 form.addEventListener('submit', (event) => {
   let a = false;
