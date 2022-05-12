@@ -28,6 +28,8 @@ function closeContent() {
   mobileNav.style.top = '-100%';
 }
 
+let formObj = {};
+
 mobileLink.forEach((link) => { link.addEventListener('click', closeContent); });
 
 const projectsContainer = document.querySelector('.my-recent-works');
@@ -125,10 +127,21 @@ form.addEventListener('submit', (event) => {
 // Populate LocalStrorage
 function populateStorage() {
   formObj = {
-    Name: form.user.value,
+    Name: form.fullname.value,
     Email: form.email.value,
     Message: form.message.value,
   };
   const convertObj = JSON.stringify(formObj);
   localStorage.setItem('FormData', convertObj);
 }
+
+// Populate FormFields
+function getDataFromLocalStorage() {
+  let data = null;
+  data = localStorage.getItem('FormData');
+  data = JSON.parse(data);
+  form.fullname.value = data.Name;
+  form.email.value = data.Email;
+  form.message.value = data.Message;
+}
+
