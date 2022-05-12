@@ -122,3 +122,13 @@ form.addEventListener('submit', (event) => {
     error.innerText = 'Please Your Email Must be in Lower Case';
   }
 });
+// Populate LocalStrorage
+function populateStorage() {
+  formObj = {
+    Name: form.user.value,
+    Email: form.email.value,
+    Message: form.message.value,
+  };
+  const convertObj = JSON.stringify(formObj);
+  localStorage.setItem('FormData', convertObj);
+}
