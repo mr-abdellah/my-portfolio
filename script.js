@@ -28,6 +28,8 @@ function closeContent() {
   mobileNav.style.top = '-100%';
 }
 
+let formObj = {};
+
 mobileLink.forEach((link) => { link.addEventListener('click', closeContent); });
 
 const projectsContainer = document.querySelector('.my-recent-works');
@@ -122,3 +124,32 @@ form.addEventListener('submit', (event) => {
     error.innerText = 'Please Your Email Must be in Lower Case';
   }
 });
+// Populate LocalStrorage
+function populateStorage() {
+  formObj = {
+    Name: form.fullname.value,
+    Email: form.email.value,
+    Message: form.message.value,
+  };
+  const convertObj = JSON.stringify(formObj);
+  localStorage.setItem('FormData', convertObj);
+}
+
+// Populate FormFields
+function getDataFromLocalStorage() {
+  let data = null;
+  data = localStorage.getItem('FormData');
+  data = JSON.parse(data);
+  form.fullname.value = data.Name;
+  form.email.value = data.Email;
+  form.message.value = data.Message;
+}
+
+window.onload = function () {
+  form.fullname.addEventListener('input', populateStorage);
+  form.email.addEventListener('input', populateStorage);
+  form.message.addEventListener('input', populateStorage);
+  if (localStorage.getItem('FormData') !== null) {
+    getDataFromLocalStorage();
+  }
+};
