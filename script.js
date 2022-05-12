@@ -145,3 +145,11 @@ function getDataFromLocalStorage() {
   form.message.value = data.Message;
 }
 
+window.onload = function () {
+  form.user.addEventListener('input', populateStorage);
+  form.email.addEventListener('input', populateStorage);
+  form.message.addEventListener('input', populateStorage);
+  if (localStorage.getItem('FormData') !== null) {
+    getDataFromLocalStorage();
+  }
+};
