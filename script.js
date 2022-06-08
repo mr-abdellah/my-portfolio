@@ -34,10 +34,10 @@ mobileLink.forEach((link) => { link.addEventListener('click', closeContent); });
 
 const projectsContainer = document.querySelector('.my-recent-works');
 
-function generatProject({ name, image, technologies }, index) {
+function generatProject({name, image, technologies }, index) {
   return `
   <div class="project">
-  <div class="work-background" style="background : url(${image})"></div>
+  <div class="work-background"><img src="${image}" class="project-bk"></div>
     <h3 class="work-title">${name}</h3>
       <div class="categories">
         <ul>
@@ -54,16 +54,14 @@ function generatProject({ name, image, technologies }, index) {
 
 const projects = [
   {
-    name: 'Project One',
-    description: 'Test',
-    image: './images/bg.jpg',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    name: 'To-Do List Project',
+    image: './img/projects-back/p1-bk.png',
+    technologies: ['Html', 'css', 'JavaScript'],
     liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
     source: 'https://google.com',
   },
   {
     name: 'Project Two',
-    description: 'Test',
     image: './images/bg.jpg',
     technologies: ['Ruby on rails', 'css', 'JavaScript'],
     liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
@@ -71,7 +69,6 @@ const projects = [
   },
   {
     name: 'Project Three',
-    description: 'Test',
     image: './images/bg.jpg',
     technologies: ['Ruby on rails', 'css', 'JavaScript'],
     liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
@@ -79,7 +76,6 @@ const projects = [
   },
   {
     name: 'Project four',
-    description: 'Test',
     image: './images/bg.jpg',
     technologies: ['Ruby on rails', 'css', 'JavaScript'],
     liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
@@ -87,7 +83,6 @@ const projects = [
   },
   {
     name: 'Project Five',
-    description: 'Test',
     image: './images/bg.jpg',
     technologies: ['Ruby on rails', 'css', 'JavaScript'],
     liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
@@ -95,7 +90,6 @@ const projects = [
   },
   {
     name: 'Project Six',
-    description: 'Test',
     image: './images/bg.jpg',
     technologies: ['Ruby on rails', 'css', 'JavaScript'],
     liveVersion: 'https://mr-abdellah.github.io/my-portfolio/',
